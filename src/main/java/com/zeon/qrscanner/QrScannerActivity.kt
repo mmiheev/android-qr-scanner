@@ -50,7 +50,6 @@ class QrScannerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_qr_scanner)
 
-        // Инициализируем view
         previewView = findViewById(R.id.previewView)
 
         setupBarcodeScanner()
