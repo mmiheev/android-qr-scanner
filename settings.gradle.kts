@@ -14,4 +14,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "qrscanner"
+include(":app")
 include(":library")
