@@ -47,9 +47,48 @@ dependencies {
         android:exported="false" />
 </application>
 ```
-
 ## Complete Implementation Example
 
+<details>
+<summary><b>Click to expand implementation examples</b></summary>
+
+### Java
+```java
+public class MainActivity extends AppCompatActivity {
+    private ActivityResultLauncher<Unit> qrScannerLauncher;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        qrScannerLauncher = registerForActivityResult(
+                new QrScanner.ScannerContract(),
+                result -> handleQrResult(result)
+        );
+
+        Button scanButton = findViewById(R.id.scanButton);
+        scanButton.setOnClickListener(v -> launchQrScanner());
+    }
+
+    private void launchQrScanner() {
+        qrScannerLauncher.launch(Unit.INSTANCE);
+    }
+
+    private void handleQrResult(QrResult result) {
+        if (result instanceof QrResult.Success) {
+            String scannedText = ((QrResult.Success) result).getText();
+            Toast.makeText(this, "Scanned: " + scannedText, Toast.LENGTH_SHORT).show();
+        } else if (result instanceof QrResult.Error) {
+            QrException error = ((QrResult.Error) result).getException();
+            Toast.makeText(this, "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+        } else if (result instanceof QrResult.Canceled) {
+            Toast.makeText(this, "Scan canceled", Toast.LENGTH_SHORT).show();
+        }
+    }
+}
+```
+### Kotlin
 ```kotlin
 class MainActivity : AppCompatActivity() {
     private lateinit var resultTextView: TextView
@@ -84,6 +123,7 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
+</details>
 
 ## Required Permissions
 
