@@ -177,6 +177,6 @@ If you encounter issues or have questions:
 
 ---
 
-**Version:** v1.0.1  
+**Version:** v1.0.2  
 **Min Android Version:** 6.0 (API 24)  
 **Required Permissions:** CAMERA
