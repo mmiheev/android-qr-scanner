@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
     private val qrScannerLauncher = registerForActivityResult(QrScanner.ScannerContract()) { result ->
         when (result) {
             is QrResult.Success -> {
-                resultTextView.text = "Результат: ${result.text}"
+                resultTextView.text = "Result: ${result.text}"
                 Toast.makeText(this, "QR code recognized: ${result.text}", Toast.LENGTH_SHORT).show()
             }
             is QrResult.Error -> {
