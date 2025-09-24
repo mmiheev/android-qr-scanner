@@ -1,0 +1,32 @@
+[versions]
+agp = "8.13.0"
+kotlin = "2.2.20"
+coreKtx = "1.17.0"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+appcompat = "1.7.1"
+material = "1.13.0"
+camera = "1.5.0"
+lifecycle = "1.5.0"
+view = "1.5.0"
+mlkit = "17.3.0"
+lifecycle-runtime-ktx = "2.9.4"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-camera = { group = "androidx.camera", name = "camera-camera2", version.ref = "camera" }
+androidx-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "lifecycle" }
+androidx-view = { group = "androidx.camera", name = "camera-view", version.ref = "view" }
+google-mlkit = { group = "com.google.mlkit", name = "barcode-scanning", version.ref = "mlkit" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+
+[plugins]
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+
