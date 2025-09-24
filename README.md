@@ -32,7 +32,7 @@ In your module's `build.gradle.kts` file:
 
 ```kotlin
 dependencies {
-    implementation("com.github.mmiheev:android-qr-scanner:v1.0.1")
+    implementation("com.github.mmiheev:android-qr-scanner:v1.0.2")
 }
 ```
 
