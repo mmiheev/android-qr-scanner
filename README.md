@@ -32,7 +32,7 @@ In your module's `build.gradle.kts` file:
 
 ```kotlin
 dependencies {
-    implementation("com.github.mmiheev:android-qr-scanner:v1.0.1")
+    implementation("com.github.mmiheev:android-qr-scanner:v1.0.2")
 }
 ```
 
@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
     private val qrScannerLauncher = registerForActivityResult(QrScanner.ScannerContract()) { result ->
         when (result) {
             is QrResult.Success -> {
-                resultTextView.text = "Результат: ${result.text}"
+                resultTextView.text = "Result: ${result.text}"
                 Toast.makeText(this, "QR code recognized: ${result.text}", Toast.LENGTH_SHORT).show()
             }
             is QrResult.Error -> {
