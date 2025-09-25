@@ -2,8 +2,6 @@
 
 [![JitPack](https://jitpack.io/v/mmiheev/android-qr-scanner.svg)](https://jitpack.io/#mmiheev/android-qr-scanner)
 
-https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white
-
 A simple and convenient QR code scanning library for Android. Built on CameraX with a ready-to-use Activity for quick integration into your application.
 
 ## Features
