@@ -1,13 +1,15 @@
 # QR Scanner Library
 
-[![](https://jitpack.io/v/mmiheev/android-qr-scanner.svg)](https://jitpack.io/#mmiheev/android-qr-scanner)
+[![Android](https://img.shields.io/badge/Platform-Android-brightgreen?style=flat)](https://www.android.com)
+[![Kotlin](https://img.shields.io/badge/Language-Kotlin-7F52FF?style=flat)](https://kotlinlang.org)
+[![JitPack](https://jitpack.io/v/mmiheev/android-qr-scanner.svg)](https://jitpack.io/#mmiheev/android-qr-scanner)
 
 A simple and convenient QR code scanning library for Android. Built on CameraX with a ready-to-use Activity for quick integration into your application.
 
 ## Features
 
 - Uses CameraX for stable camera performance
-- Supports Android 6.0+ (API 24)
+- Supports Android 7.0+ (API 24)
 - Easy integration
 
 ## Installation
@@ -177,6 +179,6 @@ If you encounter issues or have questions:
 
 ---
 
-**Version:** v1.0.1  
-**Min Android Version:** 6.0 (API 24)  
+**Version:** v1.0.2  
+**Min Android Version:** 7.0 (API 24)  
 **Required Permissions:** CAMERA
