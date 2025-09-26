@@ -34,7 +34,7 @@ In your module's `build.gradle.kts` file:
 
 ```kotlin
 dependencies {
-    implementation("com.github.mmiheev:android-qr-scanner:v1.0.2")
+    implementation("com.github.mmiheev:android-qr-scanner:1.0.3")
 }
 ```
 
@@ -179,6 +179,6 @@ If you encounter issues or have questions:
 
 ---
 
-**Version:** v1.0.2  
+**Version:** 1.0.3  
 **Min Android Version:** 7.0 (API 24)  
 **Required Permissions:** CAMERA
